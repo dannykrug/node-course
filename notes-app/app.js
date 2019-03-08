@@ -1,5 +1,16 @@
-require('./utils.js')
+const getNotes = require('./notes.js')
 
-const name = "Danny"
+const notes = getNotes()
 
-console.log(name)
+console.log(notes)
+
+
+
+
+
+
+// const add = require('./utils.js')
+//
+// const sum = add(4, -2)
+//
+// console.log(sum)
