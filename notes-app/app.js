@@ -8,4 +8,4 @@ console.log(notes)
 
 console.log(validator.isURL('krug.com'))
 
-console.log(chalk.green('Success!'))
+console.log(chalk.blue.inverse('Success!'))
