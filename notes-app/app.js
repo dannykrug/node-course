@@ -2,10 +2,12 @@ const validator = require('validator')
 const chalk = require('chalk')
 const getNotes = require('./notes.js')
 
-const notes = getNotes()
+const command = process.argv[2]
 
-console.log(notes)
+console.log(process.argv)
 
-console.log(validator.isURL('krug.com'))
-
-console.log(chalk.blue.inverse('Success!'))
+if (command === 'add') {
+  console.log('Adding note')
+} else if (command === 'remove') {
+  console.log('Removing note')
+}
